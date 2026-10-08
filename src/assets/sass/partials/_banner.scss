@@ -1,0 +1,242 @@
+/* ======================  Banner Section Start  ======================*/
+.banner {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding-top: 90px;
+
+    &__shape {
+        height: 100%;
+        width: 400px;
+        background-color: hsl(var(--base) / 0.04);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     
+    }
+
+    &__thumb {
+        max-width: 755px;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top: 59%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        user-select: none;
+    }
+
+
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        height: 100%;
+        width: 100%;
+           opacity: 0.03;
+           user-select: none;
+           pointer-events: none;
+
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        max-width: 610px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        color: hsl(var(--base));
+        letter-spacing: 3px;
+    }
+
+    &__title {
+        font-size: 160px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+        color: hsl(vaR(--heading-color));
+    }
+
+    &__desc {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        a {
+            font-weight: 600;
+        }
+    }
+
+    &__search__icon {
+        color: hsl(var(--base));
+        display: inline-flex;
+        flex-shrink: 0;
+
+        svg {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: stretch;
+
+
+        min-height: 64px;
+        margin-top: 40px;
+        padding: 8px;
+        background-color: hsl(var(--white));
+        border: 1px solid hsl(var(--border-color));
+        border-radius: 14px;
+
+    }
+
+    &__search {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0 12px;
+    }
+
+    &__location {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0 14px;
+        border-left: 1px solid hsl(var(--black) / 0.08);
+    }
+
+    &__form-button {
+        flex: 0 0 120px;
+        border-radius: 10px;
+    }
+
+    &__left {
+        max-width: 400px;
+        position: absolute;
+        left: 61px;
+        bottom: 61px;
+
+        &__user {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 40px;
+                width: 40px;
+                margin-left: -10px;
+                border: 2px solid hsl(var(--white));
+                border-radius: 50%;
+
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &__users {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        &__title {
+            font-size: 30px;
+            color: hsl(var(--heading-color));
+            font-weight: 600;
+            max-width: 330px;
+        }
+
+
+    }
+
+    &__right {
+        max-width: 500px;
+        position: absolute;
+        right: 38px;
+        bottom: 60px;
+
+        &__desc {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        &__buttons {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+    }
+
+    &__user__title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    &__user__desc {
+        font-size: 16px;
+    }
+
+
+}
+
+.banner__form .form-control {
+    border: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.banner__search {
+    display: flex;
+    align-items: center;
+
+}
+
+.banner__location .select2-selection.select2-selection--single {
+    border: 0;
+    height: auto;
+    padding-left: 0;
+}
+
+.banner__location {
+    display: flex;
+    align-items: center;
+}
+
+.banner__location .form-select {
+    width: 100%;
+    min-width: 0;
+    padding-right: 28px;
+    padding-left: 8px;
+    border: 0;
+    box-shadow: none;
+}
+
+.banner__location .select2-container {
+    width: 100% !important;
+}
+
+.banner__location .select2-selection__rendered {
+    padding-left: 8px !important;
+}
+
+/* ======================  Banner Section End  ======================*/

@@ -1,0 +1,82 @@
+/* Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ========================= Css Variables Start ======================== */
+:root {
+  /* Font Family */
+  --heading-font: "Barlow", sans-serif;
+  --body-font: "IBM Plex Sans", sans-serif;
+
+
+  //========= border-radius start ======// 
+  --radius-sm:10px;
+  --radius-lg:16px;
+  --radius-xl:32px;
+  //========= border-radius ends ======// 
+
+  /* ========================= Theme Color Start ============================= */
+  @include colorVariable(--base, #315CFD, 10);
+
+  @include colorVariable(--base-two, #16213E, 10);
+  /* ========================= Theme Color End ============================= */
+
+  /* ========================= Color Variables Start =========================== */
+  // White Color
+  @include colorVariable(--white, #fff);
+
+  // Body Color
+  @include colorVariable(--body-color,  #7d8897);
+
+  // Body BG
+  @include colorVariable(--body-bg, #fff);
+
+  // heading-color
+  @include colorVariable(--heading-color,  #16213E);
+
+  // Black Color
+  @include colorVariable(--black, #000);
+
+  //Border Color
+  @include colorVariable(--border-color, #EDF0F5);
+
+  // Section Background
+  @include colorVariable(--section-bg, #F8FAFC);
+
+  /* ================================ Box Shadow Start =============================== */
+  --box-shadow: 0px 2px 15px hsl(var(--black) / 0.05);
+  /* ================================ Box Shadow End =============================== */
+
+  /* ============================== Bootstrap Modifier Start ============================== */
+  /* Primary Color */
+  @include colorVariable(--primary, #0007cc, 5);
+
+  /* Secondary Color */
+  @include colorVariable(--secondary, #6d767e, 5);
+
+  /* Success Color */
+  @include colorVariable(--success, #1bcc00, 5);
+
+  /* Danger Color */
+  @include colorVariable(--danger, #fb4646, 5);
+
+  /* Warning Color */
+  @include colorVariable(--warning, #eb9c00, 5);
+
+  /* Info Color */
+  @include colorVariable(--info, #00bbff, 5);
+
+  /* ============================== Bootstrap Modifier End ============================== */
+
+  /* ============================== Dark Mood Color Modify Start ============================== */
+  [data-theme='dark'] {
+    // Reverse White
+    @include colorVariable(--white, #101213);
+
+    // Reverse Black
+    @include colorVariable(--black, #f8fafc);
+  }
+
+  /* ============================== Dark Mood Color Modify End ============================== */
+}
+
+/* ========================= Css Variables End =========================== */

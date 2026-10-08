@@ -1,0 +1,204 @@
+/* ======================  Footer Section Start  ======================*/
+.footer{
+    position: relative;
+    overflow: hidden;
+    margin-top: auto;
+    padding: 58px 0 46px;
+    color: hsl(var(--white));
+   background-color: hsl(var(--black));
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 34% -5% 0;
+        opacity: 0.16;
+        pointer-events: none;
+        background-image: radial-gradient(hsl(var(--white) / 0.38) 1px, transparent 1px);
+        background-size: 8px 8px;
+        mask-image: radial-gradient(ellipse at center, black, transparent 72%);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__main {
+        row-gap: 36px;
+    }
+
+    &__newsletter {
+        max-width: 280px;
+        padding-top: 2px;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 18px;
+
+       
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: hsl(var(--white));
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: 500;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        height: 43px;
+        padding: 4px 5px 4px 14px;
+        border: 1px solid hsl(var(--white) / 0.34);
+        border-radius: 50px;
+        background: hsl(var(--white));
+
+        &-input {
+            min-width: 0;
+            flex: 1;
+            border: 0;
+            outline: 0;
+            color: hsl(var(--body-color));
+            background: transparent;
+            font-family: var(--body-font);
+            font-size: 10px;
+
+            &::placeholder {
+                color: hsl(var(--body-color) / 0.55);
+            }
+        }
+
+        &-button {
+            width: 34px;
+            height: 34px;
+            flex: 0 0 34px;
+            border-radius: 50%;
+            color: hsl(var(--white));
+            background: hsl(var(--success));
+            font-size: 14px;
+            transition: 0.3s;
+
+            &:hover,
+            &:focus-visible {
+                background: hsl(var(--base));
+            }
+        }
+    }
+
+    &__note,
+    &__copyright,
+    &__legal-link,
+    &__group-link,
+    &__address,
+    &__contact-link {
+        color: hsl(var(--white) / 0.72);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    &__note {
+        margin-top: 14px;
+    }
+
+    &__panel,
+    &__bottom {
+        border: 1px solid hsl(var(--white) / 0.12);
+        background: hsl(var(--white) / 0.06);
+        backdrop-filter: blur(10px);
+    }
+
+    &__panel {
+        min-height: 251px;
+        padding: 30px 34px;
+        border-radius: 17px;
+    }
+
+    &__group {
+        &-title {
+            margin-bottom: 17px;
+            color: hsl(var(--white));
+            font-family: var(--body-font);
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        &-item {
+            margin-bottom: 7px;
+        }
+
+        &-link {
+            &:hover,
+            &:focus-visible {
+                color: hsl(var(--white));
+            }
+        }
+
+        &-address {
+            margin-bottom: 6px;
+            font-style: normal;
+        }
+    }
+
+    &__contact {
+        .footer__contact-link {
+            display: block;
+        }
+    }
+
+    &__bottom {
+        margin-top: 17px;
+        padding: 17px 18px;
+        border-radius: 13px;
+    }
+
+    &__copyright {
+        margin: 0;
+    }
+
+    &__legal {
+        display: flex;
+        justify-content: flex-end;
+        gap: 26px;
+
+        &-link {
+            &:hover,
+            &:focus-visible {
+                color: hsl(var(--white));
+            }
+        }
+    }
+
+    @include md-screen {
+        padding: 48px 0 34px;
+
+        &__panel {
+            padding: 26px 22px;
+        }
+    }
+
+    @include sm-screen {
+        &__newsletter {
+            max-width: 360px;
+        }
+
+        &__panel {
+            min-height: auto;
+        }
+
+        &__bottom {
+            text-align: center;
+            row-gap: 10px;
+        }
+
+        &__legal {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+        }
+    }
+
+}
+/* ======================  Footer Section End  ======================*/
